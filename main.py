@@ -1,9 +1,16 @@
 # This file extracts data from a remote repository in GitHub and creates a .csv file with
 # any valuable leaks the file contains
-import re
 import git
-import sys
 import pandas as pd
+import re
+import sys
+from IPython.display import display
+
+pd.set_option('display.max_rows', 15)
+pd.set_option('display.max_columns', 5)
+pd.set_option('display.width', 1000000)
+pd.set_option('display.colheader_justify', 'center')
+pd.set_option('display.precision', 3)
 
 
 def extract(url: str, **kwargs) -> git.Repo:
@@ -29,16 +36,19 @@ def transform(repo: git.Repo, keys: list) -> pd.DataFrame():
 
 def load(dataframe: pd.DataFrame) -> None:
     print('Creating leaks.csv:')
-    dataframe.to_csv('leaks.csv', sep=';', encoding='utf-8')
+    dataframe.to_json('leaks.json')
     return print(dataframe)
 
 
 def main():
-    url = 'https://github.com/skalenetwork/skale-manager'
-    repository = extract(url=url)
-    dataframe = transform(repo=repository, keys=['password', 'key'])
-    load(dataframe=dataframe)
-    print('Finished loading leaks')
+    try:
+        url = 'https://github.com/skalenetwork/skale-manager'
+        repository = extract(url=url)
+        dataframe = transform(repo=repository, keys=['password', 'key'])
+        load(dataframe=dataframe)
+        print('Finished loading leaks')
+    except KeyboardInterrupt:
+        print("Forced exit: Exiting program...")
 
 
 if __name__ == '__main__':
