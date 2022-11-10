@@ -5,6 +5,7 @@ import pandas as pd
 import re
 import os
 import sys
+from tqdm import tqdm
 from IPython.display import display
 
 pd.set_option('display.max_rows', 15)
@@ -31,9 +32,12 @@ def transform(repo: git.Repo, keys: list) -> pd.DataFrame():
     print('Leaking data:')
     dataframe = pd.DataFrame(columns=['author', 'date', 'message'])
     patterns = re.compile("|".join(keys), re.UNICODE)
-    for commit in repo.iter_commits():
-        if patterns.search(commit.message, re.IGNORECASE):
-            dataframe.loc[len(dataframe)] = [commit.author, commit.committed_date, commit.message]
+    with tqdm(total=len(list(repo.iter_commits())), desc='Transforming commits...',
+              bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}') as pbar:
+        for commit in repo.iter_commits():
+            if patterns.search(commit.message, re.IGNORECASE):
+                dataframe.loc[len(dataframe)] = [commit.author, commit.committed_date, commit.message]
+            pbar.update(1)
     print('Finished leaking data')
     return dataframe
 
