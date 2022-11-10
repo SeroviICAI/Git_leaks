@@ -3,6 +3,7 @@
 import git
 import pandas as pd
 import re
+import os
 import sys
 from IPython.display import display
 
@@ -14,6 +15,9 @@ pd.set_option('display.precision', 3)
 
 
 def extract(url: str, **kwargs) -> git.Repo:
+    if os.path.isdir('skale-manager-HTTPS'):
+        print('Extracting repo from local dir: {}'.format('skale-manager-HTTPS'))
+        return git.Repo('skale-manager-HTTPS', search_parent_directories=True)
     print('Extracting remote repo: {}'.format(url))
     if 'branch' in kwargs.items():
         repo = git.Repo.clone_from(url=url, to_path='skale-manager-HTTPS', branch=kwargs.get('branch'))
@@ -34,10 +38,10 @@ def transform(repo: git.Repo, keys: list) -> pd.DataFrame():
     return dataframe
 
 
-def load(dataframe: pd.DataFrame) -> None:
+def load(dataframe: pd.DataFrame):
     print('Creating leaks.csv:')
-    dataframe.to_json('leaks.json')
-    return print(dataframe)
+    dataframe.to_json('leaks.json', orient='records', lines=True)
+    return display(dataframe)
 
 
 def main():
