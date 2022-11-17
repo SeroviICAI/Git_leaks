@@ -38,13 +38,17 @@ def transform(repo: git.Repo, keys: list) -> pd.DataFrame():
             if patterns.search(commit.message, re.IGNORECASE):
                 dataframe.loc[len(dataframe)] = [commit.author, commit.committed_date, commit.message]
             pbar.update(1)
+    dataframe['author'] = dataframe['author'].apply(str)
+    dataframe['message'] = dataframe['message'].apply(str)
     print('Finished leaking data')
     return dataframe
 
 
 def load(dataframe: pd.DataFrame):
     print('Creating leaks.csv:')
-    dataframe.to_json('leaks.json', orient='records', lines=True)
+    dataframe.to_csv('leaks.csv')
+    print('Creating leaks.json:')
+    dataframe.to_json('leaks.json', orient='records', indent=2)
     return display(dataframe)
 
 
