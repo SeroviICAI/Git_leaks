@@ -1,77 +1,77 @@
-;author;date;message
-0;Artem Payvin;1628243812;"Merge pull request #647 from skalenetwork/enhancement/SKALE-2510-adopt-private-keys
+,author,date,message
+0,Artem Payvin,1628243812,"Merge pull request #647 from skalenetwork/enhancement/SKALE-2510-adopt-private-keys
 
 Enhancement/skale 2510 adopt private keys"
-1;Artem Payvin;1628070643;"Merge branch 'enhancement/SKALE-2510-adopt-private-keys' of https://github.com/skalenetwork/skale-manager into enhancement/SKALE-2510-adopt-private-keys
+1,Artem Payvin,1628070643,"Merge branch 'enhancement/SKALE-2510-adopt-private-keys' of https://github.com/skalenetwork/skale-manager into enhancement/SKALE-2510-adopt-private-keys
 "
-2;Artem Payvin;1626518564;"Rename environment private keys
+2,Artem Payvin,1626518564,"Rename environment private keys
 "
-3;Dmytro Stebaiev;1609768279;"SKALE-2958 Add keys check
+3,Dmytro Stebaiev,1609768279,"SKALE-2958 Add keys check
 "
-4;Artem Payvin;1607505887;"Merge pull request #445 from skalenetwork/enhancement/SKALE-3504-hash-key
+4,Artem Payvin,1607505887,"Merge pull request #445 from skalenetwork/enhancement/SKALE-3504-hash-key
 
 SKALE-3504 add hash on X coordinate"
-5;Artem Payvin;1607430181;Merge branch 'develop' into enhancement/SKALE-3504-hash-key
-6;Artem Payvin;1599501719;"Add elliptic to test for publi keys
+5,Artem Payvin,1607430181,Merge branch 'develop' into enhancement/SKALE-3504-hash-key
+6,Artem Payvin,1599501719,"Add elliptic to test for publi keys
 "
-7;Artem Payvin;1599147398;"Add public key to address function
+7,Artem Payvin,1599147398,"Add public key to address function
 "
-8;Artem Payvin;1599035170;"Merge pull request #367 from skalenetwork/enhancement/Remove-node-bls-public-keys
+8,Artem Payvin,1599035170,"Merge pull request #367 from skalenetwork/enhancement/Remove-node-bls-public-keys
 
 Enhancement/remove node bls public keys"
-9;Artem Payvin;1598967392;"Remove computation od node bls public key
+9,Artem Payvin,1598967392,"Remove computation od node bls public key
 "
-10;Chadwick Strange;1597746753;"Fix typo in keyStorage.ts
+10,Chadwick Strange,1597746753,"Fix typo in keyStorage.ts
 "
-11;Artem Payvin;1593782127;"Merge pull request #296 from skalenetwork/bugfix/DKG-BLS-public-key-and-node-rotation
+11,Artem Payvin,1593782127,"Merge pull request #296 from skalenetwork/bugfix/DKG-BLS-public-key-and-node-rotation
 
 Bugfix/SKALE 2847 dkg bls public key and node rotation"
-12;Artem Payvin;1593614436;Merge branch 'develop' into bugfix/DKG-BLS-public-key-and-node-rotation
-13;Artem Payvin;1593610575;"SKALE-2847 fix calculate public key
+12,Artem Payvin,1593614436,Merge branch 'develop' into bugfix/DKG-BLS-public-key-and-node-rotation
+13,Artem Payvin,1593610575,"SKALE-2847 fix calculate public key
 "
-14;Artem Payvin;1593550324;"init fix for BLS public key
+14,Artem Payvin,1593550324,"init fix for BLS public key
 "
-15;Dima Stebaev;1593178538;"Merge pull request #277 from skalenetwork/feature/SKALE-2812-admin-key
+15,Dima Stebaev,1593178538,"Merge pull request #277 from skalenetwork/feature/SKALE-2812-admin-key
 
 SKALE-2812 Update permissions"
-16;Dima Stebaev;1593168533;Merge branch 'develop' into feature/SKALE-2812-admin-key
-17;Artem Payvin;1593168321;"Merge pull request #272 from skalenetwork/bug/SKALE-2810-bls-public-keys
+16,Dima Stebaev,1593168533,Merge branch 'develop' into feature/SKALE-2812-admin-key
+17,Artem Payvin,1593168321,"Merge pull request #272 from skalenetwork/bug/SKALE-2810-bls-public-keys
 
 SKALE-2810 compute public keys"
-18;Artem Payvin;1593155122;"Merge branch 'develop' into bug/SKALE-2810-bls-public-keys
+18,Artem Payvin,1593155122,"Merge branch 'develop' into bug/SKALE-2810-bls-public-keys
 "
-19;Artem Payvin;1593143881;Merge branch 'develop' into bug/SKALE-2810-bls-public-keys
-20;Oleh Nikolaiev;1593008991;Merge branch 'develop' into bug/SKALE-2810-bls-public-keys
-21;Oleh Nikolaiev;1593008710;"SKALE-2810 compute public keys
+19,Artem Payvin,1593143881,Merge branch 'develop' into bug/SKALE-2810-bls-public-keys
+20,Oleh Nikolaiev,1593008991,Merge branch 'develop' into bug/SKALE-2810-bls-public-keys
+21,Oleh Nikolaiev,1593008710,"SKALE-2810 compute public keys
 "
-22;Dmytro Stebaiev;1590158755;"SKALE-2625 Change node public key format
+22,Dmytro Stebaiev,1590158755,"SKALE-2625 Change node public key format
 "
-23;Artem Payvin;1582807690;"Merge pull request #91 from skalenetwork/enhancement/SKALE-2214-added-past-public-keys
+23,Artem Payvin,1582807690,"Merge pull request #91 from skalenetwork/enhancement/SKALE-2214-added-past-public-keys
 
 Added past public keys"
-24;Artem Payvin;1582798038;"Merge branch 'develop' of github.com:skalenetwork/skale-manager into enhancement/SKALE-2214-added-past-public-keys
+24,Artem Payvin,1582798038,"Merge branch 'develop' of github.com:skalenetwork/skale-manager into enhancement/SKALE-2214-added-past-public-keys
 "
-25;Artem Payvin;1582733546;Merge branch 'develop' into enhancement/SKALE-2214-added-past-public-keys
-26;Artem Payvin;1582719871;"Merge branch 'develop' of github.com:skalenetwork/skale-manager into enhancement/SKALE-2214-added-past-public-keys
+25,Artem Payvin,1582733546,Merge branch 'develop' into enhancement/SKALE-2214-added-past-public-keys
+26,Artem Payvin,1582719871,"Merge branch 'develop' of github.com:skalenetwork/skale-manager into enhancement/SKALE-2214-added-past-public-keys
 "
-27;Artem Payvin;1582714726;Merge branch 'develop' into enhancement/SKALE-2214-added-past-public-keys
-28;Artem Payvin;1582637057;"Merge branch 'enahncement/SKALE-2228-added-block-to-schain' of github.com:skalenetwork/skale-manager into enhancement/SKALE-2214-added-past-public-keys
+27,Artem Payvin,1582714726,Merge branch 'develop' into enhancement/SKALE-2214-added-past-public-keys
+28,Artem Payvin,1582637057,"Merge branch 'enahncement/SKALE-2228-added-block-to-schain' of github.com:skalenetwork/skale-manager into enhancement/SKALE-2214-added-past-public-keys
 "
-29;Artem Payvin;1582637007;"Merge branch 'develop' of github.com:skalenetwork/skale-manager into enhancement/SKALE-2214-added-past-public-keys
+29,Artem Payvin,1582637007,"Merge branch 'develop' of github.com:skalenetwork/skale-manager into enhancement/SKALE-2214-added-past-public-keys
 "
-30;Artem Payvin;1582297157;"Added past public keys
+30,Artem Payvin,1582297157,"Added past public keys
 "
-31;Vadim Yavorsky;1580931028;"SKALE-2060 added private keys to virtual environment
+31,Vadim Yavorsky,1580931028,"SKALE-2060 added private keys to virtual environment
 "
-32;Dmytro Stebaiev;1579188690;"SKALE-1973 Fix issue with private keys on testing
+32,Dmytro Stebaiev,1579188690,"SKALE-1973 Fix issue with private keys on testing
 "
-33;Sergiy Lavrynenko;1576059404;"SKALE-1806 DKG related fixes, key parts order
+33,Sergiy Lavrynenko,1576059404,"SKALE-1806 DKG related fixes, key parts order
 "
-34;Artem Payvin;1576005613;"Finally fixed order of public keys
+34,Artem Payvin,1576005613,"Finally fixed order of public keys
 "
-35;Artem Payvin;1576002790;"Fixed order of public key
+35,Artem Payvin,1576002790,"Fixed order of public key
 "
-36;Artem Payvin;1574184553;"Remove private keys from travis yml
+36,Artem Payvin,1574184553,"Remove private keys from travis yml
 "
-37;Artem Payvin;1571238209;"SKALE-1213 added verify function based on schains publickey
+37,Artem Payvin,1571238209,"SKALE-1213 added verify function based on schains publickey
 "
